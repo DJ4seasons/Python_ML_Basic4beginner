@@ -18,7 +18,7 @@
 ### Data 
 1. NOAA climate data record(CDR) Outgoing Longwave Radiation(OLR)
 
-Monthly 1979-2019, 2.5deg X 2.5deg
+Monthly 1979-2019, 2.5deg X 2.5deg, DOI: 10.7289/V5W37TKD, from https://www.ncdc.noaa.gov/cdr/atmospheric/outgoing-longwave-radiation-monthly
 
 
 2. Nino3.4 index 
