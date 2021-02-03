@@ -93,8 +93,8 @@ def main():
 
     print("\nX data range: {:.3f} to {:.3f}".format(X.min(), X.max()))
     print("y data distribution")
-    for lab,val in zip(nn_label,np.histogram(y,[-1.5,-0.5,0.5,1.5])[0]):
-        print("{}: {:5d}".format(lab,val))
+    for lab,val in zip(nn_label,np.unique(y)):
+        print("{:3d}={:10s}: {:5d}".format(val,lab,(y==val).sum()))
 
     ### Train-Test split: 5 years for test, and no shuffle for testing recent years
     X_train, X_test, y_train, y_test= train_test_split(X,y,test_size= 60/y.shape[0],shuffle=False)

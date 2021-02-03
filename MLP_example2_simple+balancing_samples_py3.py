@@ -107,7 +107,7 @@ def main():
         idx2copy= np.random.choice(sample_size,size2add)  ## replacement=True in default
         return X1[idx2copy,:],y1[idx2copy]
 
-    tgt_size= (y_train==0).sum()
+    tgt_size= (y_train==1).sum()
     ## La Nina case
     idx= y_train==0
     X_add1, y_add1= generate_new_samples(X_train[idx,:],y_train[idx],tgt_size)
